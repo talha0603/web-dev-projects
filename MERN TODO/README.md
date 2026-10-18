@@ -151,6 +151,7 @@ This project implements basic sign-in but does not currently issue or validate a
 
 ## Author
 
-**Talha** — [GitHub: talha0603](https://github.com/talha0603)
+**M Talha Makhdoom** — [GitHub: talha0603](https://github.com/talha0603)
 
 This project is part of the [web-dev-projects](https://github.com/talha0603/web-dev-projects) collection.
+
