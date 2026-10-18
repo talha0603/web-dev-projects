@@ -67,19 +67,28 @@ routerList.delete( '/deleteTask/:id', async (req , res) => {
             return res.status(403).json({ message: 'You can only delete your own task, this is not yours.' });
         }
         
-        await List.findOneAndDelete(req.params.id);
-        await User.findByIdAndDelete(existingUser._id, 
-            { 
-                $pull: { 
-                    list: task._id 
-                }
-            })
+        await List.findByIdAndDelete(req.params.id);
+        await User.findByIdAndUpdate(existingUser._id, { $pull: { list: task._id } });
 
         res.status(200).json({message: "Task deleted" });
     } catch (error) {
         console.log(error);
         res.status(500).json({ error })
         
+    }
+} )
+
+// Getting Task Details
+routerList.get( '/getTasks/:id', async (req,res) => {
+    try {
+        const list = await List.find({user: req.params.id}).sort({ createdAt: -1 })   // sort ascending/descending
+        if (list.length > 0) {
+            return await res.status(200).json({ list })
+        }
+        res.status(200).json({ list: [], message: 'No Tasks' });
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).json({ message: error.message });
     }
 } )
 

@@ -1,12 +1,14 @@
 // const express = require('express')
 import 'dotenv/config'
 import express from 'express'
+import cors from 'cors'
 import connection from './connection/connection.js'
 import router from './routes/auth.js';
 import routerList from './routes/list.js'
 const app = express();
 
 // we want data in json so that's why
+app.use(cors({ origin: 'http://localhost:5173' }))
 app.use(express.json());
 
 connection();
