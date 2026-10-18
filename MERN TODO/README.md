@@ -2,6 +2,34 @@
 
 A full-stack task management application built with MongoDB, Express, React, and Node.js. Create an account, sign in, and organize tasks through a React interface backed by a REST API.
 
+## Application Preview
+
+### Home & Dashboard
+
+A welcoming home page with a personal task summary and quick access to the workspace.
+
+![Home page and personal dashboard](docs/screenshots/home.png)
+
+### Task Management
+
+Create tasks, edit details, and view completed items in one workspace.
+
+![Task workspace showing active and completed tasks](docs/screenshots/tasks.png)
+
+### About the Project
+
+An overview of the application and its task management workflow.
+
+![About page and workflow](docs/screenshots/about.png)
+
+### Technology & Call to Action
+
+![Technology cards and call to action on the About page](docs/screenshots/technology.png)
+
+### Footer & Navigation
+
+![Application footer with page and account navigation](docs/screenshots/footer.png)
+
 ## Features
 
 - User registration and sign-in with bcrypt password hashing.
@@ -12,6 +40,19 @@ A full-stack task management application built with MongoDB, Express, React, and
 - Toast notifications for feedback on user actions.
 
 ## Technology Stack
+
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" title="React" width="44" height="44" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" alt="Vite" title="Vite" width="44" height="44" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" width="44" height="44" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" title="CSS" width="44" height="44" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js" width="44" height="44" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express" title="Express" width="44" height="44" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" title="MongoDB" width="44" height="44" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg" alt="Mongoose" title="Mongoose" width="44" height="44" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg" alt="ESLint" title="ESLint" width="44" height="44" />
+</p>
+
 
 | Layer | Technologies |
 | --- | --- |
@@ -46,6 +87,8 @@ web-dev-projects/
     │       │   ├── App.jsx
     │       │   └── main.jsx
     │       └── package.json
+    ├── docs/
+    │   └── screenshots/
     ├── .gitignore
     └── README.md
 ```
@@ -154,4 +197,5 @@ This project implements basic sign-in but does not currently issue or validate a
 **M Talha Makhdoom** — [GitHub: talha0603](https://github.com/talha0603)
 
 This project is part of the [web-dev-projects](https://github.com/talha0603/web-dev-projects) collection.
+
 
