@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    background: #f5f0f0;
+  }
+}
+
+:root {
+  --swiper-navigation-color: #000000;
+  --swiper-navigation-size: 14px;
+}
+
+/*-------------------------------------------------------------*/
+
+ ::-webkit-scrollbar{               /* Scrollbar width, height */        
+  width: 10px !important;
+  height: 10px !important;
+ }
+ ::-webkit-scrollbar-track {       /* Scrollbar Back Patti Color */  
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {        /* Scrollbar's Part You Drag */
+  background: #9ca3af;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {  /* Scrollbar Color */
+  background: #6366f1;
+}
+
+/*-------------------------------------------------------------*/
+
+/* CSS */
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+nav button {
+  text-transform: capitalize !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* ------------------------------------------------------------*/
+
+/* CatSlider CSS FOR ARROWS */
+.catSwiper .swiper-button-prev,
+.catSwiper .swiper-button-next {
+  width: 26px !important;
+  height: 26px !important;
+  margin-top: -13px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.catSwiper .swiper-button-prev svg,
+.catSwiper .swiper-button-next svg {
+  width: 9px !important;
+  height: 9px !important;
+}
+
+.catSwiper .swiper-button-prev:not(.swiper-button-disabled):hover,
+.catSwiper .swiper-button-next:not(.swiper-button-disabled):hover {
+  background-color: #6366f1;
+  color: #ffffff !important;
+}
+
+.mySwiper .swiper-button-disabled,
+.catSwiper .swiper-button-disabled {
+  pointer-events: auto !important;
+  cursor: default !important;
+}
+
+.img-transition:hover{
+  transform: scale(1.1);
+}
+
+/* ------------------------------------------------------------*/

@@ -1,0 +1,3 @@
+.searchBox input::placeholder {
+    color: rgb(144, 140, 140) !important;
+}
